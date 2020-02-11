@@ -46,6 +46,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func FetchCocktails(ingredi: String)
     {
+        let ds : DataService = DataService()
+        var cocktailList : [CocktailSt] = ds.RequestCocktails(ingredient: ingredi)
         
     }
     
