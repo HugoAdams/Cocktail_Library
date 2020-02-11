@@ -19,7 +19,7 @@ class DataService : NSObject
 {
     let ingredientFilter : String = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i="
     
-    public func RequestCocktails(ingredient: String)->[CocktailSt]
+    public func RequestCocktails(ingredient: String, vc: ViewController)
     {
         let url = URL(string: ingredientFilter + ingredient)
         var cocktailArr = [CocktailSt]()
@@ -29,14 +29,13 @@ class DataService : NSObject
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String : Any]                
                 let drinks = json["drinks"] as? [[String: Any]] ?? []
-                print("printing drinks[0]")
-                print(drinks[0]["strDrinkThumb"] as Any)
                 
                 for numb in 0..<drinks.count
                 {
                     cocktailArr.append(self.CocktailData(drink: drinks[numb]))
                 }
                 
+                vc.UpdateCocktails(cktls: cocktailArr)
             }
             catch let error as NSError
             {
@@ -44,8 +43,6 @@ class DataService : NSObject
                 print(error)
             }
         }).resume()
-        
-        return cocktailArr
     }
     
     func CocktailData(drink: [String: Any]) -> CocktailSt
