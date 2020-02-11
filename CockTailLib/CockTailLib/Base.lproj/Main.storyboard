@@ -62,13 +62,6 @@
                                     <outlet property="delegate" destination="B03-f6-LNx" id="zfR-WK-eRa"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="testlabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLw-UL-pW0">
-                                <rect key="frame" x="238" y="128" width="66" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lAA-9n-EFV"/>
@@ -77,7 +70,6 @@
                     <connections>
                         <outlet property="CocktailTable" destination="yJQ-SZ-nOl" id="IIp-V6-GMc"/>
                         <outlet property="IngredientTF" destination="Vkp-DL-9Bk" id="EXY-Mx-rg6"/>
-                        <outlet property="testLabel" destination="jLw-UL-pW0" id="vLm-Ua-zLC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aqf-Mb-Ytn" userLabel="First Responder" sceneMemberID="firstResponder"/>

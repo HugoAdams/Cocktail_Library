@@ -21,7 +21,10 @@ class DataService : NSObject
     
     public func RequestCocktails(ingredient: String, vc: ViewController)
     {
-        let url = URL(string: ingredientFilter + ingredient)
+        var str = ingredient.replacingOccurrences(of: "\\", with: "")
+        str = String(str.filter{!" ".contains($0)})
+        
+        let url = URL(string: ingredientFilter + str)
         var cocktailArr = [CocktailSt]()
 
         URLSession.shared.dataTask(with: url!, completionHandler: {(data, response, error) in guard let data = data, error == nil else { return }

@@ -12,7 +12,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
    
     //MARK: Properties
     @IBOutlet weak var IngredientTF: UITextField!
-    @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var CocktailTable: UITableView!
     var cocktails: [CocktailSt] = [CocktailSt]()
     
@@ -68,7 +67,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     public func UpdateCocktails(cktls : [CocktailSt])
     {
         cocktails = cktls
-        Refresh()
+        DispatchQueue.main.async {
+            self.Refresh()
+        }
     }
 }
 
