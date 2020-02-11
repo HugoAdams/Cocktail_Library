@@ -12,7 +12,7 @@
 		A8B8C21023F2039F0024EC97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B8C20E23F2039F0024EC97 /* Main.storyboard */; };
 		A8B8C21223F203A30024EC97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B8C21123F203A30024EC97 /* Assets.xcassets */; };
 		A8B8C21523F203A30024EC97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B8C21323F203A30024EC97 /* LaunchScreen.storyboard */; };
-		A8B8C21F23F242580024EC97 /* CocktailST.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8C21E23F242580024EC97 /* CocktailST.swift */; };
+		A8B8C21F23F242580024EC97 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8C21E23F242580024EC97 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		A8B8C21123F203A30024EC97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8B8C21423F203A30024EC97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8B8C21623F203A30024EC97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8B8C21E23F242580024EC97 /* CocktailST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailST.swift; sourceTree = "<group>"; };
+		A8B8C21E23F242580024EC97 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				A8B8C21123F203A30024EC97 /* Assets.xcassets */,
 				A8B8C21323F203A30024EC97 /* LaunchScreen.storyboard */,
 				A8B8C21623F203A30024EC97 /* Info.plist */,
-				A8B8C21E23F242580024EC97 /* CocktailST.swift */,
+				A8B8C21E23F242580024EC97 /* DataService.swift */,
 			);
 			path = CockTailLib;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8B8C20D23F2039F0024EC97 /* ViewController.swift in Sources */,
-				A8B8C21F23F242580024EC97 /* CocktailST.swift in Sources */,
+				A8B8C21F23F242580024EC97 /* DataService.swift in Sources */,
 				A8B8C20B23F2039F0024EC97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
