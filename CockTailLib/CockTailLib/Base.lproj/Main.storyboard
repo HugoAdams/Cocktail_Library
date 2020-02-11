@@ -13,7 +13,7 @@
         <!--Cocktails-->
         <scene sceneID="2DM-KI-9S5">
             <objects>
-                <viewController id="B03-f6-LNx" sceneMemberID="viewController">
+                <viewController id="B03-f6-LNx" customClass="ViewController" customModule="CockTailLib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jqM-6c-Hw8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,6 +29,9 @@
                                 <rect key="frame" x="112" y="119" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Find Cocktails"/>
+                                <connections>
+                                    <action selector="FindCocktailBtn:" destination="B03-f6-LNx" eventType="touchUpInside" id="Ryr-Pq-CbM"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yJQ-SZ-nOl">
                                 <rect key="frame" x="0.0" y="157" width="320" height="411"/>
@@ -54,12 +57,28 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="B03-f6-LNx" id="ovT-6M-Ls4"/>
+                                    <outlet property="delegate" destination="B03-f6-LNx" id="zfR-WK-eRa"/>
+                                </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="testlabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLw-UL-pW0">
+                                <rect key="frame" x="238" y="128" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lAA-9n-EFV"/>
                     </view>
                     <navigationItem key="navigationItem" title="Cocktails" id="cWj-tY-lHq"/>
+                    <connections>
+                        <outlet property="CocktailTable" destination="yJQ-SZ-nOl" id="IIp-V6-GMc"/>
+                        <outlet property="IngredientTF" destination="Vkp-DL-9Bk" id="EXY-Mx-rg6"/>
+                        <outlet property="testLabel" destination="jLw-UL-pW0" id="vLm-Ua-zLC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aqf-Mb-Ytn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

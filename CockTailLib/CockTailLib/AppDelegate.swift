@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CockTailLib
 //
-//  Created by Sarah Adams on 11/02/20.
+//  Created by Hugo Adams on 11/02/20.
 //  Copyright © 2020 Hugo Adams. All rights reserved.
 //
 
